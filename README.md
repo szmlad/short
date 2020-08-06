@@ -4,7 +4,7 @@ This repository contains an implementation of the parallel merge sort algorithm 
 
 ## The algorithm
 
-For a quick overview of the relevant algorithms (namely, [merging](https://en.wikipedia.org/wiki/Merge_algorithm) and [sorting](https://en.wikipedia.org/wiki/Merge_sort#Parallel_merge_sort)), take a look at their respective Wikipedia articles. For a more in-depth explanation, refer to [the documentation PDF in this repository](#toadd). The algorithm itself, both in its serial and parallel versions, is implemented in as generic a way as possible, basically having the same type requirements as `std::sort` (namely, it accepts two random access iterators for the range of elements to sort, and optionally a comparison function in the form of `(U const&, V const&) -> bool`, defaulting to `std::less<>`).
+For a quick overview of the relevant algorithms (namely, [merging](https://en.wikipedia.org/wiki/Merge_algorithm) and [sorting](https://en.wikipedia.org/wiki/Merge_sort#Parallel_merge_sort)), take a look at their respective Wikipedia articles. For a more in-depth explanation, refer to [the documentation PDF in this repository](https://github.com/szmlad/short/blob/master/doc/documentation.pdf). The algorithm itself, both in its serial and parallel versions, is implemented in as generic a way as possible, basically having the same type requirements as `std::sort` (namely, it accepts two random access iterators for the range of elements to sort, and optionally a comparison function in the form of `(U const&, V const&) -> bool`, defaulting to `std::less<>`).
 
 ## Repository structure
 
@@ -25,4 +25,4 @@ For a quick overview of the relevant algorithms (namely, [merging](https://en.wi
 
 ## Running
 
-A makefile is provided to simplify running the project. Run `make` to generate test cases, perform the test and plot the results. For a full list of build commands, consult the makefile itself.
+A makefile is provided to simplify running the project. Run `make` to generate test cases, perform the tests and plot the results. For a full list of build commands, consult the makefile itself.
